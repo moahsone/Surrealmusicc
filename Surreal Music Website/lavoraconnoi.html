@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Work With Us - Surreal Music</title>
+
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!---boxicons link--->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<!---remixicons link--->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<!---google fonts link--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<a href="#" class="logo">Surreal Music</a>
+
+		<ul class="navlist">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="charts.html">Record Label</a></li>
+			<li><a href="lavoraconnoi.html" class="active">Work with us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<section class="work-with-us">
+		<div class="section-title">
+			<h1>Lavora con noi</h1>
+			<p>Siamo sempre alla ricerca dei nuovi talenti. Applica una richiesta per scoprire se fa al caso tuo!</p>
+		</div>
+
+		<div class="roles">
+			<div class="role-card">
+				<h3>PR</h3>
+				<p>Hai per caso esperienza in pubbliche relazioni?</p>
+				<a href="#form-section" class="cta-btn" onclick="setRole('PR')">Apply as PR</a>
+			</div>
+
+			<div class="role-card">
+				<h3>A&R</h3>
+				<p>Ti piace scoprire nuova musica e nuovi talenti?</p>
+				<a href="#form-section" class="cta-btn" onclick="setRole('A&R')">Apply as A&R</a>
+			</div>
+
+			<div class="role-card">
+				<h3>DJ</h3>
+				<p>Sei un Dj che riesce a mettere in vita un party?</p>
+				<a href="#form-section" class="cta-btn" onclick="setRole('DJ')">Apply as DJ</a>
+			</div>
+		</div>
+
+		<!-- Form Section -->
+		<div id="form-section" class="form-container">
+			<h2>Application Form</h2>
+			<p>Please answer the questions below to help us assess your suitability for the role of <span id="role-name">[Role]</span>.</p>
+
+			<form action="quiz-submit.php" method="POST">
+				<input type="hidden" name="role" id="role" value="">
+
+				<!-- Dynamic Quiz Questions -->
+				<label for="name">Your Name:</label>
+				<input type="te

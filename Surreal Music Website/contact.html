@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact & Team - Surreal Music</title>
+
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!---boxicons link--->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<!---remixicons link--->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<!---google fonts link--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<a href="#" class="logo">Surreal Music</a>
+
+		<ul class="navlist">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="charts.html">Record Label</a></li>
+			<li><a href="work-with-us.html">Work with us</a></li>
+			<li><a href="contact.html" class="active">Contact & Team</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<section class="contact-team">
+		<div class="section-title">
+			<h1>Contact Us & Meet the Team</h1>
+			<p>Get in touch with us or get to know the creative minds behind Surreal Music.</p>
+		</div>
+
+		<!-- Contact Form -->
+		<div class="contact-form">
+			<h2>Contact Us</h2>
+			<form action="contact-submit.php" method="POST">
+				<label for="name">Your Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Your Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Your Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+
+		<!-- Team Section -->
+		<div class="team-section">
+			<h2>Meet the Team</h2>
+			<div class="team-container">
+				<!-- Team Member 1 -->
+				<div class="team-member">
+					<img src="img/team1.jpg" alt="Team Member 1">
+					<h3>John Doe</h3>
+					<p>CEO & Founder</p>
+					<p>John is the visionary behind Surreal Music, passionate about bringing new artists to the world stage.</p>
+				</div>
+
+				<!-- Team Member 2 -->
+				<div class="team-member">
+					<img src="img/team2.jpg" alt="Team Member 2">
+					<h3>Jane Smith</h3>
+					<p>PR Manager</p>
+					<p>Jane is responsible for shaping Surreal Music's public image and building connections with media outlets.</p>
+				</div>
+
+				<!-- Team Member 3 -->
+				<div class="team-member">
+					<img src="img/team3.jpg" alt="Team Member 3">
+					<h3>Michael Brown</h3>
+					<p>A&R Specialist</p>
+					<p>Michael discovers new talent and helps guide them towards success in the music industry.</p>
+				</div>
+
+				<!-- Team Member 4 -->
+				<div class="team-member">
+					<img src="img/team4.jpg" alt="Team Member 4">
+					<h3>Sarah Lee</h3>
+					<p>Event Coordinator</p>
+					<p>Sarah organizes Surreal Music's events, ensuring that every gathering is unforgettable.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2024 Surreal Music. All Rights Reserved.</p>
+		<div class="icons">
+			<a href="#"><i class="ri-instagram-line"></i></a>
+			<a href="#"><i class="ri-youtube-line"></i></a>
+			<a href="#"><i class="ri-facebook-line"></i></a>
+			<a href="#"><i class="ri-twitch-line"></i></a>
+		</div>
+	</footer>
+
+	<!---scrollreveal effect--->
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!---custom js link--->
+	<script src="js/script.js"></script>
+
+</body>
+</html>
